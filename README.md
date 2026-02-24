@@ -151,7 +151,7 @@
     * 4개의 li를 같은 크기로 나누기
 * `li {width:calc((100% - 30px) / 4 )};`
     * 4개의 li에 각 10px 씩 사이여백을 주기 위해 전체 부모 100% 너비 중 10*3 총 30px을 빼고 나머지 값을 4로 나누기
-    * `li {width:calc((100% -(10px * 3) / 4 )};`
+    * `li {width:calc((100% - (10px * 3) / 4 )};`
 * `li {display:block; height:calc(100% - 50px)};`
     * a의 크기를 인식하게 만들고 50px을 뺀 나머지 부모크기주기
 ## 수평/수직 정렬 레이아웃 속성 flex
@@ -185,3 +185,13 @@
     * `flex-start, flex-end, center` 위 메인축과 뜻 동일
 * `align-contents` : 교차축이 2줄 이상일때
     * `flex-start, flex-end, center, space-between, space-around` 위 메인축과 뜻 동일, 값 동일
+### 스크롤 디자인
+    /* Firefox */
+    html {scrollbar-width: 10px;;scrollbar-color: #222 #e73b3b;}
+    /* Opera */
+    html::-o-scrollbar {width: 10px;}
+    html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}
+    /* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+    ::-webkit-scrollbar {width: 10px;}
+    ::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}
+    ::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}
