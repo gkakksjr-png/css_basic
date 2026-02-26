@@ -1,0 +1,16 @@
+@keyframes rotate360 {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes x500 {
+    0% {transform:translateX(500px); opacity: 0;}
+    100% {transform:translateX(0); opacity: 100;}
+}
+@keyframes bg_pst {
+    0% {background-position-x: 0;}
+    100% {background-position-x: 1000px;}
+}
+@keyframes scroll {
+    0% {transform: translateY(-7px);}
+    100% {transform: translateY(7px);}
+}

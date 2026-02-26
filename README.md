@@ -185,7 +185,7 @@
     * `flex-start, flex-end, center` 위 메인축과 뜻 동일
 * `align-contents` : 교차축이 2줄 이상일때
     * `flex-start, flex-end, center, space-between, space-around` 위 메인축과 뜻 동일, 값 동일
-### 스크롤 디자인
+### 스크롤 디자인 속성값
     /* Firefox */
     html {scrollbar-width: 10px;;scrollbar-color: #222 #e73b3b;}
     /* Opera */
@@ -225,3 +225,8 @@
 * `transform:transition(10px, 20px)` x, y 이동 순서로 작성
 * 다른 모든 속성은 중심이 왼쪽 상단, **transform만 유일하게 가운데가 기준점**
 * 기분점 변경방법 : `transform-origin:x y`
+### 글자 안 마스크 속성값
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;

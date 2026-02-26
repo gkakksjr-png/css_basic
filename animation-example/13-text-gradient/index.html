@@ -13,6 +13,7 @@
             margin:0 auto; font-weight:700; 
             font-size:5rem; text-align: center;
             background: linear-gradient(to right, #ff00ff, #00ffff, #ff00ff);
+            /* -webkit- 파이어폭스, 크롬 등 브라우저에서 안전하게 속성 적요하는 웹브라우저 엔진 명령어 */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -23,6 +24,18 @@
             text-shadow:0 0 20px rgba(255,255,255,0.2);
             font-size:10rem; text-align: center; font-weight:700; 
             background: url(https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center / cover;
+            /* 글자 안에서 그라데이션 효과 및 배경이미지를 마스크씌워서 보여주고 싶을 때 사용하는 속성값 모음 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        main h3 {
+            font-size: 4rem;
+            background: url(https://i.pinimg.com/236x/86/df/98/86df983898b35177567960635b15769f.jpg);
+            background-position: center top;
+            animation: bg-img 10s linear alternate infinite, scale 2s linear alternate infinite; 
+            /* animation: scale 2s alternate infinite; */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -38,6 +51,14 @@
             0% {}
             100% {}
         }
+        @keyframes bg-img {
+            0% {background-position: center top; background-size: 100%;}
+            100% {background-position: center bottom; background-size: 400%;}
+        }
+        @keyframes scale {
+            0% {transform: scale(0.95);}
+            100% {transform: scale(1);}
+        }
     </style>
 </head>
 <body>
@@ -45,6 +66,7 @@
         <p><img src="./images/arrow.png" alt=""></p>
         <h1>PORTFOLIO</h1>
         <h2>PROJECT</h2>
+        <h3>웹접근성 & 웹 표준</h3>
         <p><img src="./images/arrow.png" alt=""></p>
     </main>
     <footer>
